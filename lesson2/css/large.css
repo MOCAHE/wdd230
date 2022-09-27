@@ -1,0 +1,17 @@
+@media only screen and (min-width: 60em) {
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 7px;
+    }
+
+    #page1 #page2 {
+        display: block;
+    }
+
+    #page3 {
+        grid-column: span 1;
+        padding-right: 50px;
+    }
+}

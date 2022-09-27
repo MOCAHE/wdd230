@@ -1,0 +1,13 @@
+@media (min-width: 32.5em){
+    header {
+        border-radius: 20px;
+    }
+
+    header h1{
+        color: rgb(228, 0, 124);
+    }
+
+    footer {
+        border-radius: 20px;
+    }
+}
