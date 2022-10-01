@@ -1,0 +1,169 @@
+/*Home*/
+
+body {
+    font-family: 'PT Serif', Arial, sans-serif;
+    text-align: justify;
+}
+
+
+
+header {
+    display: flex;
+    height: auto;
+    background-color: rgba(7, 32, 49, 0.752);
+    align-items: center;
+}
+
+.logo {
+    padding: 1em;
+}
+
+
+/*
+flex-flow: column;
+Pasa lo que esta al lado hacia abajo
+
+justify-content: center;
+Pone todo el contenido al centro
+
+justify-content: space-between;
+Separa el contenido
+
+*/
+h2 {
+    text-align: center;
+}
+
+h4 {
+    color: #ffffff;
+}
+
+header {
+    background-color: #284B63;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #D9D9D9;
+}
+
+/* flex-direction: column;
+    Ayuda a que el NAV se vea de manera vertical*/
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: flex;
+    color: rgb(255, 255, 255);
+    padding: 0.75rem;
+    text-decoration: none;
+}
+
+
+/* Inicio de todos los MAIN section*/
+main {
+    display: flex;
+    margin: 5em;
+    flex-flow: column;
+}
+
+main h1{
+    display: flex;
+    color: #072031;
+    padding: 1em;
+    justify-content: center;
+}
+
+.juan, .ana{
+    display: none;
+    padding: 1em;
+  }
+/* Fin de todos los MAIN section*/
+
+
+footer {
+    background-color: #284B63;
+    display: flex;
+    justify-content: center;
+    color: #D9D9D9;
+    padding: 1em;
+}
+
+
+.lastupdate {
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+/* Color Scheme*/
+.color {
+    display: flex;
+    padding: 10em;
+    margin: 0;
+    flex-flow: column;
+}
+
+.color h1 {
+    padding: 1em;
+}
+
+.color p{
+    display: flex;
+    justify-content: center;
+}
+
+.azul{
+    background-color: #072031;
+    color: #ffffff;
+    margin: 0;
+    padding: 2em;
+}
+
+.cafe{
+    background-color: #9C5E24;
+    color: #ffffff;
+    margin: 0;
+    padding: 2em;
+}
+
+.blanco {
+    margin: 0;
+    padding: 2em;
+}
+
+.gray {
+    background-color: #808080;
+    color: #ffffff;
+    margin: 0;
+    padding: 2em;
+}
+
+
+
+
+
+
+/* Target Audience*/
+.ana {
+    margin: auto;
+    align-content: center;
+}
+
+.juan {
+    margin: auto;
+}
+
+
+
+/* Typography */
+
+

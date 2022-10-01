@@ -1,0 +1,26 @@
+@media only screen and (min-width: 60em) {
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 250px;
+    }
+    
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      
+    }
+  
+    .juan, .ana{
+      display: block;
+    }
+    
+    footer {
+      display: flex;
+    }
+    
+    .prueba {
+      color: purple;
+    }
+  }
