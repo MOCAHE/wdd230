@@ -1,12 +1,30 @@
 @media (min-width: 32.5em){
+
     header {
+        display: flex;
+        height: 260px;
+        justify-content: space-evenly;
+        align-items: center;    
         border-radius: 20px;
     }
-
-    header h1{
+/* header{
+    
+    background-color: rgba(0, 104, 71, 0.507);
+    align-items: center;
+} */
+    h1{
+        font-size: 2.5rem;
         color: rgb(228, 0, 124);
     }
 
+    header img{
+        box-shadow: 0px 0px 30px #444;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+
+    }
     footer {
         border-radius: 20px;
     }

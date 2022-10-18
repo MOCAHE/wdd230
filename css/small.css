@@ -7,46 +7,43 @@ body {
 
 
 header{
-    display: grid;
-    height: 260px;
+    display: block;
+    height: 300px;
+    text-align: center;
     background-color: rgba(0, 104, 71, 0.507);
-    align-items: center;
-    justify-items: center;
 }
 
-header img {
-    display: grid;
-    grid-column: 1/2;
-    border-radius: 20px 20px 20px 20px;
-    padding: 5px;
+
+h1{
+    font-size: 1.5rem;
+    margin: 0.15rem;
+    color: aqua;
 }
 
-header h1 {
-    display: grid;
-    grid-column: 2/3;
-    color:rgb(255, 255, 255);
-}
 
-header h2 {
-    display: grid;
-    grid-column: 1/3;
-    grid-row: 2/3;
-    border-bottom:2px solid rgb(0, 0, 0);
+h2 {
+    font-size: 1rem;
+    border-bottom: 1px solid #000;
+    margin-bottom: 0.5rem;
 }
 
 
 main {
-    display: grid;
     padding: 50px;
     background-color: rgb(255, 255, 255);
-    align-items: center;
+}
+
+
+main ul {
+    padding: 0;
 }
 
 
 main ul li{
     list-style: none;
-    padding: 1em;
+    padding: 0.5em;
 }
+
 
 main ul li:hover {
     background-color: rgb(228, 0, 124);
@@ -55,22 +52,26 @@ main ul li:hover {
     transition: .5s;
 }
 
+
 main ul li a {
+    display: block;
     text-decoration: none;
     color: #000000;
 }
 
-main ul li a:hover{
+/* CAMBIOS*/
+
+main ul li:hover a{
     color: white;
+    padding: .5em;
 }
 
-
-
+/*Necesito convertir toda la caja en el link*/
 footer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     background-color: rgba(206, 17, 39, 0.505);
-    align-items: center;
-    justify-items: center;
 }
 
 
