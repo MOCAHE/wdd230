@@ -13,6 +13,9 @@ header{
     background-color: rgba(0, 104, 71, 0.507);
 }
 
+header img{
+    margin-top: 5px;
+}
 
 h1{
     font-size: 1.5rem;
@@ -60,13 +63,14 @@ main ul li a {
 }
 
 /* CAMBIOS*/
+/*Necesito convertir toda la caja en el link*/
+
 
 main ul li:hover a{
     color: white;
     padding: .5em;
 }
 
-/*Necesito convertir toda la caja en el link*/
 footer {
     display: flex;
     flex-direction: column;
