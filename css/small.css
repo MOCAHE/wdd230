@@ -37,14 +37,8 @@ main {
 }
 
 
-main ul {
-    padding: 0;
-}
-
-
 main ul li{
     list-style: none;
-    padding: 0.5em;
 }
 
 
@@ -52,23 +46,21 @@ main ul li:hover {
     background-color: rgb(228, 0, 124);
     transform: scale(1.1);
     color:rgb(255, 255, 255);
-    transition: .5s;
+    transition: .7s;
 }
 
 
 main ul li a {
     display: block;
+    padding: .8rem 2vw;
     text-decoration: none;
     color: #000000;
 }
 
-/* CAMBIOS*/
-/*Necesito convertir toda la caja en el link*/
-
 
 main ul li:hover a{
     color: white;
-    padding: .5em;
+    padding: 1rem;
 }
 
 footer {

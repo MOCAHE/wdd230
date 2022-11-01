@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  Font-family: "Nunito", Arial, sans-serif;
+}
+
+
+body{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+
+/* HEADER*/
+header {
+  display: grid;
+  background-color:#505050;
+	padding: 15px;
+  grid-template-columns: 60% 20% 20%;
+  font-size: 14px;
+  /* Línea de abajo de HEADER, no es necesaria*/
+	/* border-bottom: 1px solid rgb(197, 10, 10); */
+}
+
+
+/* HEADER LOGO AND NAME */
+.container1{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hlogo{
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.title h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #17bd25;
+}
+
+.title p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+
+/* HEADER SOCIAL MEDIA */
+.container3{
+  grid-column: 2/3;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.facebook{
+  width: 40px;
+  height: auto;
+}
+
+.linkedin{
+  width: 40px;
+  height: auto;
+}
+
+
+/* BOTÓN HAMBURGUESA */
+#hamburgerBtn{
+  align-self: center;
+  justify-self: center;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+#hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+/* AQUÍ TERMINA BOTÓN HAMBURGUESA */
+
+
+/* HEADER MENU */
+nav{
+  grid-row: 2;
+  grid-column: 1/4;
+}
+
+#primaryNav{
+  /* grid-column: 1/4; */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+nav ul li a {
+  display: block;/*Esto permite hacer clickleable todo y no sólo las letras*/
+  text-align: center;
+  padding: .8rem 2vw;  /* make the clickable area bigger. Puedes tocalo con los dedos */
+  text-decoration: none;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+}
+
+nav ul li.active a{
+  background-color: rgba(0, 0, 0, 0.2);/*Mantiene un color fijo (active es la clase)*/
+}
+
+/* ESTE ES EL COLOR VERDE DEL MENU */
+nav ul li a:hover {
+  background-color: rgba(58, 182, 13, 0.3);/*Cada vez que pases el mouse, se hará más obscuro (porque ya elejimos color arriba)*/
+}
+
+
+/* HEADER DATE */
+.container4{
+  grid-column: 1/4;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.date {
+  grid-row: 3/4;
+  text-align: center;
+  border: 1px solid #bbb;
+  padding: 0.75rem;
+  background-color: #ffffff;
+  max-width: 960px;
+  width: 100%;
+  color:#000000;
+}
+
+
+
+
+/* MAIN */
+main{
+  display: block;
+  padding: 5px;
+  background-color:#ffffff;
+}
+
+.inside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+
+.inside > div{
+  background-color: #eee;
+  border: 1px solid #000000;
+}
+
+.spotlights {
+  display: block;
+  border: 1px solid #000000;
+}
+
+.spotlight3{
+  display: none;
+}
+
+.join{
+  display: none;
+}
+
+
+/* ESTO SE DEBE BORRAR, SÓLO ES PARA NOTAR LOS CAMBIOS */
+footer{
+  background-color:#505050;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FOOTER */
+.parte1{
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  justify-items: center;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.location{
+  gap: 10px;
+  text-align: center;
+  justify-items: center;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.location a{
+  color: #17bd25;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+
+.parte2{
+  text-align: center;
+  justify-items: center;
+  padding: 15px;
+  color: #ffffff;
+  font-size: .75em;
+  border-top: 1px solid #ffffff;
+}
+
+footer h4{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.lastupdate{
+  color: yellow;
+}
