@@ -15,8 +15,8 @@ body{
 /* HEADER*/
 header {
   display: grid;
-  background-color:#505050;
-	padding: 15px;
+  background-color:#000000;
+  padding: 15px;
   grid-template-columns: 60% 20% 20%;
   font-size: 14px;
   /* Línea de abajo de HEADER, no es necesaria*/
@@ -142,7 +142,17 @@ nav ul li a:hover {
 .date {
   grid-row: 3/4;
   text-align: center;
-  border: 1px solid #bbb;
+  padding: 0.75rem;
+  background-color: #ffffff;
+  max-width: 960px;
+  width: 100%;
+  color:#000000;
+}
+
+.banner {
+  grid-row: 1/2;
+  text-align: center;
+  border-top: 3px dotted #000000;
   padding: 0.75rem;
   background-color: #ffffff;
   max-width: 960px;
@@ -160,6 +170,11 @@ main{
   background-color:#ffffff;
 }
 
+.inside > div{
+  background-color: #eee;
+  border: 1px solid #000000;
+}
+
 .inside {
   display: grid;
   grid-template-columns: 1fr;
@@ -167,9 +182,41 @@ main{
   gap: 10px;
 }
 
-.inside > div{
-  background-color: #eee;
-  border: 1px solid #000000;
+.AYUDA{
+  position: relative;
+}
+
+.hero img{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+.texto h2{
+  position:absolute;
+  bottom: 25px;
+  right: 50px;
+  background-color: yellow;
+  color: #000000;
+  padding: 1rem;
+  border-radius: 60px;
+}
+
+.texto p{
+  position: absolute;
+  top: 25px;
+	left: 50px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  color: yellow;
+}
+
+
+.event{
+  text-align: center;
+}
+
+.eventInfo{
+  color: blue;
 }
 
 .spotlights {
@@ -186,14 +233,14 @@ main{
 }
 
 
-/* ESTO SE DEBE BORRAR, SÓLO ES PARA NOTAR LOS CAMBIOS */
+/* FOOTER */
 footer{
-  background-color:#505050;
+  background-color:#000000;
   align-items: center;
   justify-content: center;
 }
 
-/* FOOTER */
+
 .parte1{
   display: grid;
   gap: 10px;
