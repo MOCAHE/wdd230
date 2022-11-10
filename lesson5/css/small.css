@@ -192,8 +192,10 @@ main > div{
   position: absolute;
   top: 5px;
 	left: 20px;
-  text-shadow: 2px 1px rgb(0, 0, 0);
-  color: yellow;
+  padding: .5rem;
+  color: black;
+  background-color: yellow;
+  border-radius: 60px;
 }
 
 .event{
