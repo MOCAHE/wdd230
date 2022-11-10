@@ -47,11 +47,6 @@
     grid-template-columns: 30% 40% 30%;
   }
 
-  main > div {
-    background-color: rgba(128, 128, 128, 0.442);
-    border: 2px solid rgb(0, 0, 0);
-  }
-
   .event{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -80,6 +75,8 @@
   .join {
     grid-column: 1/2;
     grid-row: 3/4;
+    display: grid;
+    align-content: center; 
   }
 
   .release{
@@ -91,6 +88,12 @@
     display: initial;
     grid-column: 3/4;
     grid-row: 3/4;
+    text-align: center;
+  }
+
+  .spotlight3 :nth-child(4){
+    border-top: 1px dotted #000000;
+    padding-top: 1rem;
   }
 
   footer{
