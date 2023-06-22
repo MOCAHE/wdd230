@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+}
+
+header {
+    background-color: #00684785;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1em;
+}
+
+nav ul li:hover {
+    background-color: rgb(228, 0, 124);
+    transform: scale(1);
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* ESTO SELECIONA EL NAV COMPLETO,
+NO SÓLO EL TEXTO */
+nav ul li:hover a {
+    color: white;
+    padding: 1rem;
+}
+
+/* ERROR, ESTO SELECCIONA EL NAV, 
+PERO SOLO CAMBIA EL COLOR 
+CUANDO PASAS EL MOUSE POR ENCIMA
+
+nav ul li a:hover {
+    color: white;
+} 
+*/
+
+footer {
+    background-color: #ce11248d;
+    color: white;
+}
+
+/*Dark Theme*/
+/* body {
+    background-color: rgba(0, 0, 0, 0.667);
+} */
