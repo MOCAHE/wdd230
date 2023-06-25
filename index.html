@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
-        <h1>Moisés Cano Hernández</h1>
         <img src="images/Me.jpg" alt="Student Image">
+        <h1>Moisés Cano Hernández</h1>
     </header>
     <nav>
         <ul>
@@ -29,7 +30,12 @@
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
-                <li><a href="#">AQUÍ VA OTRA COSA</a></li>
+                <li><a href="#">Week 01: Layout | Media Query | JS Pen</a></li>
+                <li><a href="#">Week 02:</a></li>
+                <li><a href="#">Week 03:</a></li>
+                <li><a href="#">Week 04:</a></li>
+                <li><a href="#">Week 05:</a></li>
+                <li><a href="#">Week 06:</a></li>
             </ul>
         </section>
         <section class="card">
@@ -39,8 +45,9 @@
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> Moisés Cano Hernández México (bandera &#x1F1F2;&#x1F1FD;)</p>
-        <p>lastModified</p>
+        <p>&copy; <span id="year"></span> | Moisés Cano Hernández | México</p><br>
+        <p class="lastupdate">Last Modification: <span id="update"></span></p>
     </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
