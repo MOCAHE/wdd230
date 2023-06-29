@@ -1,2 +1,6 @@
-const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }
-document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', options);
+const Update = document.lastModified
+document.querySelector("#update").textContent = Update;
+
+let currentDate = new Date();
+let Year = currentDate.getFullYear();
+document.querySelector("#year").textContent = Year;

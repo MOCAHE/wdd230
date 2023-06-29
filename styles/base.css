@@ -53,7 +53,7 @@ nav ul li {
 /*  ESTO ES UNA ANIMACIÓN   
     transform: scale(1.1);
  */
-nav ul li:hover {
+ul li:hover {
     background-color: #b07153;
     color: rgb(255, 255, 255);
     transition: .2s;
@@ -61,7 +61,7 @@ nav ul li:hover {
 
 /* ESTO SELECIONA EL NAV COMPLETO,
 NO SÓLO EL TEXTO */
-nav ul li:hover a {
+ul li:hover a {
     color: white;
 }
 
