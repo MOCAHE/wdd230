@@ -6,26 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/week02/styles/bom.css">
     <title>JavaScript: DOM Manipulation</title>
-    <meta name="description"    content="Basic DOM manipulation">
+    <meta name="description"    content="Basic DOM Manipulation">
     <meta name="author"         content="Moisés Cano Hernández">
   </head>
 
   <body>
     <h1>📖 Book of Mormon - Top 10</h1>
     <main>
-        <div class="input">
-            <label>Enter Book and Chapter<br>
-                <input type="text" id="favchap" placeholder="Alma 5" required></label>
-            <button type="submit">Add Chapter</button>
-        </div>
-        
-        <div class="listcontainer">
-            <ul class="list"></ul>
-        </div>
-
-        <script src="/lesson5/js/bom.js"></script>
-
+      <label for="favchap">Enter Book and Chapter: </label>
+      <input type="text" id="favchap" placeholder="Alma 5" value="Alma 5">
+      <button type="submit">Add Chapter</button>
+      <ul id="list"></ul>
     </main>
+    <script src="scripts/bom.js"></script>
   </body>
 
 </html>
