@@ -3,6 +3,7 @@ body {
     margin: 0;
 }
 
+/* FIN Reglas Generales*/
 li {
     list-style: none;
 }
@@ -16,10 +17,6 @@ ul {
     padding: 0;
 }
 
-nav ul li a.active {
-    text-decoration: underline;
-}
-
 header,
 nav,
 main,
@@ -30,34 +27,6 @@ footer {
     box-sizing: border-box;
 }
 
-header {
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: #202c45;
-}
-
-h1 {
-    padding: 1rem;
-    color: white;
-}
-
-nav {
-    padding-bottom: 1rem;
-    box-sizing: border-box;
-}
-
-nav ul li {
-    padding: .75em;
-    text-align: center;
-}
-
-/*  ESTO ES UNA ANIMACIÓN   
-    transform: scale(1.1);
- */
 ul li:hover {
     background-color: #b07153;
     color: rgb(255, 255, 255);
@@ -80,6 +49,87 @@ nav ul li a:hover {
 } 
 */
 
+/* FIN Reglas Generales */
+
+header {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #202c45;
+}
+
+h1 {
+    padding: 1rem;
+    color: white;
+}
+
+#hamburgerBtn {
+    position: relative;
+    padding: .5em;
+    font-size: 2rem;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+nav {
+    margin-bottom: 2em;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+#primaryNav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* INICIO CHAT GPT */
+nav ul li {
+    padding: .75em;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+/* FIN CHAT GPT */
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -90,9 +140,8 @@ main {
 
 h2 {
     text-decoration: underline;
-    margin-top: 0;
+    margin-top: -2.5em;
 }
-
 
 .card {
     margin: 1rem 0;
@@ -137,3 +186,6 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* nav ul a todos tienen paddings y margenes ahi me quede 
+corregir o eliminar trasform*/
