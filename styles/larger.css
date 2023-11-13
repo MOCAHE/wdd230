@@ -16,16 +16,20 @@
     }
 
     nav {
-        display: flex;
-        justify-content: center;
+        margin: 0;
     }
 
     nav ul {
         display: flex;
     }
 
-    ul li:hover {
-        background-color: gray;
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav ul li a {
+        padding: 1em;
+        margin: 0;
     }
 
     main {

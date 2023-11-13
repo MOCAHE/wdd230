@@ -13,10 +13,6 @@ ul li a {
     color: #000000;
 }
 
-ul {
-    padding: 0;
-}
-
 header,
 nav,
 main,
@@ -28,7 +24,7 @@ footer {
 }
 
 ul li:hover {
-    background-color: #b07153;
+    background-color: #000000;
     color: rgb(255, 255, 255);
     transition: .2s;
     transform: scale(1.2);
@@ -58,7 +54,7 @@ header {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: #202c45;
+    background-color: #000000;
 }
 
 h1 {
@@ -69,6 +65,7 @@ h1 {
 #hamburgerBtn {
     position: relative;
     padding: .5em;
+    padding-bottom: 0;
     font-size: 2rem;
     color: #000000;
     background-color: transparent;
@@ -112,14 +109,13 @@ nav ul.open {
 
 /* INICIO CHAT GPT */
 nav ul li {
-    padding: .75em;
     text-align: center;
     position: relative;
 }
 
 nav ul li a {
     display: block;
-    padding: 1em;
+    padding: 1.5em;
     width: 100%;
     height: 100%;
 }
@@ -151,7 +147,7 @@ h2 {
 }
 
 .card h3 {
-    background-color: #202c45;
+    background-color: #000000;
     color: white;
     padding: 1rem;
     margin: 0;
@@ -178,13 +174,17 @@ main p {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: #b07153;
+    background-color: #000000;
     color: white;
     align-items: center;
 }
 
 footer p {
     margin: 0;
+}
+
+.lastupdate {
+    color: yellow;
 }
 
 /* nav ul a todos tienen paddings y margenes ahi me quede 
