@@ -3,7 +3,6 @@ body {
     margin: 0;
 }
 
-/* FIN Reglas Generales*/
 li {
     list-style: none;
 }
@@ -15,6 +14,7 @@ ul li a {
 
 header,
 nav,
+h2,
 main,
 footer {
     max-width: 640px;
@@ -44,8 +44,6 @@ nav ul li a:hover {
     color: white;
 } 
 */
-
-/* FIN Reglas Generales */
 
 header {
     margin-top: 0;
@@ -88,11 +86,6 @@ h1 {
     display: block;
 }
 
-nav {
-    margin-bottom: 2em;
-    box-sizing: border-box;
-}
-
 nav ul {
     display: none;
 }
@@ -116,8 +109,6 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: 1.5em;
-    width: 100%;
-    height: 100%;
 }
 
 /* FIN CHAT GPT */
@@ -132,11 +123,6 @@ main {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-}
-
-h2 {
-    text-decoration: underline;
-    margin-top: -2.5em;
 }
 
 .card {
@@ -186,6 +172,3 @@ footer p {
 .lastupdate {
     color: yellow;
 }
-
-/* nav ul a todos tienen paddings y margenes ahi me quede 
-corregir o eliminar trasform*/
