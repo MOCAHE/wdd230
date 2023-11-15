@@ -23,11 +23,13 @@ footer {
     box-sizing: border-box;
 }
 
-ul li:hover {
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    transition: .2s;
-    transform: scale(1.2);
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
 /* ESTO SELECIONA EL NAV COMPLETO,
@@ -39,11 +41,18 @@ ul li:hover a {
 /* ERROR, ESTO SELECCIONA EL NAV, 
 PERO SOLO CAMBIA EL COLOR 
 CUANDO PASAS EL MOUSE POR ENCIMA
-
+NO HACER ESTO !!!!
 nav ul li a:hover {
     color: white;
 } 
 */
+
+ul li:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    transition: .2s;
+    transform: scale(1.2);
+}
 
 header {
     margin-top: 0;
@@ -171,4 +180,44 @@ footer p {
 
 .lastupdate {
     color: yellow;
+}
+
+
+/* DARK MODE */
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+    border-color: #eee;
+}
+
+.dark-mode nav {
+    border: 1px solid #eee;
+}
+
+.dark-mode #hamburgerBtn {
+    color: #fff;
+}
+
+.dark-mode ul li:hover {
+    background-color: #fff;
+    color: #000;
+    transition: .2s;
+    transform: scale(1.2);
+}
+
+.dark-mode ul li:hover a {
+    color: #000;
+}
+
+.dark-mode ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dark-mode .card {
+    border: 1px solid #eee;
+}
+
+.dark-mode .card h3 {
+    border: 1px solid #eee;
 }
