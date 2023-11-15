@@ -32,28 +32,6 @@ footer {
     font-size: 1.5rem;
 }
 
-/* ESTO SELECIONA EL NAV COMPLETO,
-NO SÓLO EL TEXTO */
-ul li:hover a {
-    color: white;
-}
-
-/* ERROR, ESTO SELECCIONA EL NAV, 
-PERO SOLO CAMBIA EL COLOR 
-CUANDO PASAS EL MOUSE POR ENCIMA
-NO HACER ESTO !!!!
-nav ul li a:hover {
-    color: white;
-} 
-*/
-
-ul li:hover {
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    transition: .2s;
-    transform: scale(1.2);
-}
-
 header {
     margin-top: 0;
     margin-bottom: 0;
@@ -109,18 +87,32 @@ nav ul.open {
     margin: 0;
 }
 
-/* INICIO CHAT GPT */
-nav ul li {
-    text-align: center;
-    position: relative;
+/*TODOS los ul tienen esa animación*/
+ul li:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    transition: .2s;
+    transform: scale(1.2);
 }
 
+/* TODOS los ul, sólo modifica texto */
+ul li:hover a {
+    color: white;
+}
+
+/*Centra el texto*/
+nav ul li {
+    text-align: center;
+}
+
+/*position: relative; AL PARECER NO HACE NADA*/
+
+/*Este código es el mejor para abarcar con el dedo
+y para seleccionar todo el renglon, no sólo el texto*/
 nav ul li a {
     display: block;
     padding: 1.5em;
 }
-
-/* FIN CHAT GPT */
 
 nav ul li a.active {
     text-decoration: underline;

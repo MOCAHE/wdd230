@@ -16,10 +16,6 @@ ul {
     padding: 0;
 }
 
-nav ul li a.active {
-    text-decoration: underline;
-}
-
 header,
 nav,
 main,
@@ -37,7 +33,7 @@ header {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: #202c45;
+    background-color: #000000;
 }
 
 h1 {
@@ -46,22 +42,32 @@ h1 {
 }
 
 nav {
-    padding-bottom: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    padding: .75em;
     text-align: center;
 }
 
+nav ul li a {
+    display: block;
+    padding: 1.5em;
+}
+
 nav ul li:hover {
-    background-color: #b07153;
+    background-color: #000000;
     color: rgb(255, 255, 255);
     transition: .2s;
+    transform: scale(1.2);
 }
 
 nav ul li:hover a {
     color: white;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
 }
 
 img {
@@ -73,11 +79,15 @@ img {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: #b07153;
+    background-color: #000000;
     color: white;
     align-items: center;
 }
 
 footer p {
     margin: 0;
+}
+
+.lastupdate {
+    color: yellow;
 }
