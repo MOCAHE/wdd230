@@ -13,7 +13,8 @@
     }
 
     nav ul li a:hover {
-        background-color: rgba(222, 11, 11, 0.507);
+        background-color: #fff;
+        color: #000000;
         /*Cada vez que pases el mouse, se hará más obscuro (porque ya elejimos color arriba)*/
     }
 
