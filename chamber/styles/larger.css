@@ -7,7 +7,7 @@
 
     header {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: auto 1fr auto;
         align-items: center;
         padding: 15px;
     }
@@ -36,8 +36,8 @@
 
     #primaryNav {
         display: flex;
-        justify-content: flex-start;
-        /* to move right use "flex-end" */
+        justify-content: center;
+        align-items: center;
     }
 
     nav ul li a {
