@@ -29,6 +29,19 @@ header {
     justify-content: space-evenly;
 }
 
+.ver {
+    color: green;
+}
+
+.bla,
+.resto {
+    color: white;
+}
+
+.roj {
+    color: red;
+}
+
 .hlogo {
     padding-right: 10px;
     padding-bottom: 10px;
