@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+}
+
+main{
+    margin: 0 auto;
+    width: 400px;
+    display: block;
+}
+
+img{
+    width: 100%;
+    background-color: #000;
+    animation: fade 15s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: white;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.lastupdate {
+    color: yellow;
+}
