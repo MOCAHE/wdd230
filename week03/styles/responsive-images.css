@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: white;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.lastupdate {
+    color: yellow;
+}
