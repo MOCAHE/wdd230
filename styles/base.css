@@ -12,6 +12,19 @@ ul li a {
     color: #000000;
 }
 
+/*TODOS los ul tienen esa animación*/
+ul li:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    transition: .2s;
+    transform: scale(1.2);
+}
+
+/* TODOS los ul, sólo modifica texto */
+ul li:hover a {
+    color: white;
+}
+
 header,
 nav,
 h2,
@@ -73,31 +86,18 @@ h1 {
     display: block;
 }
 
-nav ul {
-    display: none;
-}
-
-nav ul.open {
-    display: block;
-}
-
 #primaryNav {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/*TODOS los ul tienen esa animación*/
-ul li:hover {
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    transition: .2s;
-    transform: scale(1.2);
+nav ul {
+    display: none;
 }
 
-/* TODOS los ul, sólo modifica texto */
-ul li:hover a {
-    color: white;
+nav ul.open {
+    display: block;
 }
 
 /*Centra el texto*/
@@ -125,6 +125,39 @@ main {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+/* CORREGIR DE AQUI HASTA ... */
+.hero {
+	margin: 10px auto;
+	position: relative;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Great Vibes", serif;
+}
+/* AQUÍ y cambiar tipo de archivo de imagenes y nombres de archivo*/
 
 .card {
     margin: 1rem 0;
@@ -183,7 +216,7 @@ footer p {
 }
 
 .dark-mode nav {
-    border: 1px solid #eee;
+    border: none;
 }
 
 .dark-mode #hamburgerBtn {
