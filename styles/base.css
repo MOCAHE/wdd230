@@ -100,12 +100,9 @@ nav ul.open {
     display: block;
 }
 
-/*Centra el texto*/
 nav ul li {
     text-align: center;
 }
-
-/*position: relative; AL PARECER NO HACE NADA*/
 
 /*Este código es el mejor para abarcar con el dedo
 y para seleccionar todo el renglon, no sólo el texto*/
@@ -128,7 +125,7 @@ main {
 
 /* CORREGIR DE AQUI HASTA ... */
 .hero {
-	margin: 10px auto;
+	margin: 0 auto;
 	position: relative;
 }
 
@@ -142,20 +139,18 @@ main {
 	position: absolute;
 	top: 30px;
 	left: 30px;
-	background: radial-gradient(#fff, #4D5B97);
-	border: 1px solid rgba(0,0,0,.75);
+	background: radial-gradient(#00000058, #ffffff6d);
 	padding: 1.5rem;
-	box-shadow: 0 0 3rem #fff;
+	box-shadow: 0 0 3rem #000;
 	opacity: 0.75;
-	/* Buenas */
 }
 
 .herolabel p {
 	margin: 0;
-	padding: .25rem;
 	font-weight: 700;
 	font-size: 2rem;
-	font-family:"Great Vibes", serif;
+	font-family:"Times New Roman", serif;
+    color: #fff;
 }
 /* AQUÍ y cambiar tipo de archivo de imagenes y nombres de archivo*/
 

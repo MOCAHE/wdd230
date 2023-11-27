@@ -71,6 +71,11 @@ header {
     justify-self: center;
 }
 
+.socialmedia{
+    display: flex;
+    justify-content: center;
+}
+
 .facebook {
     width: 40px;
     height: auto;
