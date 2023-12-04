@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 0 auto;
 }
 
 li {
@@ -92,6 +92,10 @@ h1 {
     margin: 0;
 }
 
+nav{
+    padding: 0;
+}
+
 nav ul {
     display: none;
 }
@@ -116,14 +120,14 @@ nav ul li a.active {
 }
 
 main {
-    display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 1em;
+    display: grid;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-/* CORREGIR DE AQUI HASTA ... */
 .hero {
 	margin: 0 auto;
 	position: relative;
@@ -152,38 +156,53 @@ main {
 	font-family:"Times New Roman", serif;
     color: #fff;
 }
-/* AQUÍ y cambiar tipo de archivo de imagenes y nombres de archivo*/
 
+/* Estilos para la tarjeta en general */
 .card {
-    margin: 1rem 0;
     border: 1px solid #000000;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    /* Otros estilos de .card si son necesarios */
 }
 
+/* Encabezado de la tarjeta */
 .card h3 {
     background-color: #000000;
     color: white;
-    padding: 1rem;
+    padding: 1em;
     margin: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.card ul {
-    display: inline-block;
-    padding: 0 2em;
-    text-align: left;
-}
-
-.card li {
-    padding: .5em;
-}
-
-main p {
+/* Contenedor del cuerpo de la tarjeta */
+.card-body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    padding: 1em; /* Ajusta según sea necesario */
+    min-width: 200px; /* Ejemplo de un ancho mínimo */
+}
+
+
+.card-body ul {
+    text-align: left; /* Cambia esto a left para alinear el texto a la izquierda */
+    list-style: none; /* Remueve los estilos de lista por defecto si es necesario */
+    padding: 0; /* Remueve padding por defecto */
+}
+
+/* Estilos para elementos de lista dentro de .card-body */
+.card-body li {
+    padding: 0.5em; /* Ajusta el padding como necesites, sin padding horizontal para alineación izquierda */
+}
+
+.label{
+    font-weight: bold;
+}
+
+/* Mapa */
+iframe{
+    width: 100%;
 }
 
 footer {
@@ -201,7 +220,6 @@ footer p {
 .lastupdate {
     color: yellow;
 }
-
 
 /* DARK MODE */
 .dark-mode {

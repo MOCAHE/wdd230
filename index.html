@@ -51,9 +51,9 @@
     <main>
         <div class="hero">
             <picture>
-                <source media="(max-width: 500px)" srcset="images\correcion.webp">
-                <source media="(min-width: 1000px)" srcset="images\large-hero-stockholm.webp">
-                <img src="images/large-hero-stockholm.webp" alt="Stockholm Temple">
+                <source media="(max-width: 500px)" srcset="images\listo.webp">
+                <source media="(min-width: 960px)" srcset="images\esperanza.webp">
+                <img src="images/hero-stockholm.webp" alt="Stockholm Temple">
             </picture>
             <div class="herolabel">
                 <p>Stockholm Temple</p>
@@ -62,32 +62,44 @@
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
-            <ul>
-                <li>Week 01:
-                    <a href="week01/holygrail.html">Layout</a> |
-                    <a href="week01/media-query.html">Query</a> |
-                    <a href="https://codepen.io/MOCAHE/pen/zYMBpbm">Applied JavaScrip</a>
-                </li>
-                <li>Week 02:
-                    <a href="week02/design.html">Web Design Principles</a> |
-                    <a href="https://codepen.io/MOCAHE/pen/ExOXOpp">Responsive Menu</a> |
-                    <a href="week02/bom.html">JavaScript: DOM Manipulation</a>
-                </li>
-                <li>Week 03:
-                    <a href="week03/images/landscape.webp">WebP</a> |
-                    <a href="week03/lazyload.html">Lazy Load</a> |
-                    <a href="week03/responsive-image.html">Responsive Images</a>
-                </li>
-                <li>Week 04: <a href="#"></a></li>
-                <li>Week 05: <a href="#"></a></li>
-                <li>Week 06: <a href="#"></a></li>
-            </ul>
+            <div class="card-body">
+                <ul>
+                    <li>Week 01:
+                        <a href="week01/holygrail.html">Layout</a> |
+                        <a href="week01/media-query.html">Query</a> |
+                        <a href="https://codepen.io/MOCAHE/pen/zYMBpbm">Applied JavaScrip</a>
+                    </li>
+                    <li>Week 02:
+                        <a href="week02/design.html">Web Design Principles</a> |
+                        <a href="https://codepen.io/MOCAHE/pen/ExOXOpp">Responsive Menu</a> |
+                        <a href="week02/bom.html">JavaScript: DOM Manipulation</a>
+                    </li>
+                    <li>Week 03:
+                        <a href="week03/images/landscape.webp">WebP</a> |
+                        <a href="week03/lazyload.html">Lazy Load</a> |
+                        <a href="week03/responsive-image.html">Responsive Images</a>
+                    </li>
+                    <li>Week 04: <a href="#"></a></li>
+                    <li>Week 05: <a href="#"></a></li>
+                    <li>Week 06: <a href="#"></a></li>
+                </ul>
+            </div>
         </section>
         <section class="card">
             <h3>Information</h3>
-            <p>Clasificación del clima: <span id="weather">AQUÍ VA OTRA COSA</span></p>
-            <p>Número de visitas: <span id="visits">AQUÍ VA OTRA COSA</span></p>
+            <div class="card-body FUNCIONA">
+                <div class="weather">
+                    20°C - Rainy
+                </div>
+                <div class="label">
+                    Number of Visits: <span class="visits"></span>
+                </div>
         </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.4545712188824!2d18.109163900000002!3d59.1247948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f64aa23d2f147%3A0x655d55d6a5b652f6!2sTemplo%20de%20Estocolmo!5e0!3m2!1ses-419!2smx!4v1701339218123!5m2!1ses-419!2smx"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </main>
     <footer>
         <p>&copy; <span id="year"></span> | Moisés Cano Hernández | México</p><br>
@@ -96,6 +108,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/hamburgerBotton.js"></script>
+    <script src="scripts/visitCounter.js"></script>
 </body>
 
 </html>

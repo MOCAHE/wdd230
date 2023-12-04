@@ -24,15 +24,15 @@
 
     <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
-    <!-- <link rel="stylesheet" type="text/css" href="styles/borrar.css"> -->
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
 </head>
 
 <body>
     <header>
-        <div class="container1">
-            <a href="../index.html"><img class="hlogo" src="images/azteca100.webp"
-                    alt="Azteca Chamber of Commerce logo"></a>
+        <div class="hlogo">
+            <a href="../index.html">
+                <img src="images/azteca100.png" alt="Mexico Chamber of Commerce logo">
+            </a>
             <div class="title">
                 <h1>
                     <span class="ver">MÉ</span><span class="bla">XI</span><span class="roj">CO</span><br>
@@ -41,7 +41,10 @@
             </div>
         </div>
 
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <button id="hamburgerBtn">
+            <span>&#9776;</span><span>X</span>
+        </button>
+
         <nav>
             <ul id="primaryNav">
                 <li><a href="../index.html">Home</a></li>
@@ -51,13 +54,13 @@
             </ul>
         </nav>
 
-        <div class="container3">
-            <div class="socialmedia">
-                <a href="https://www.facebook.com/" target="_blank"><img class="facebook" src="images/facebook-icon.png"
-                        alt="Facebook Logo"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img class="linkedin" src="images/linkedin-icon.png"
-                        alt="Linkedin"></a>
-            </div>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="Facebook Logo">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin.png" alt="Linkedin">
+            </a>
         </div>
 
         <div class="container4">
@@ -67,115 +70,110 @@
     </header>
 
     <main>
-        <div class="AYUDA">
-            <img src="images/cdmx.jpg" alt="Mexico City">
+        <div class="cdmx">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/cdmx-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/cdmx-large.webp">
+                <img src="images/cdmx-large.webp" alt="Mexico City">
+            </picture>
             <div class="texto">
-                <h2>Join the Chamber</h2>
-                <p><b>Welcome to Azteca</b></p>
+                <p>Join the Chamber</p>
             </div>
         </div>
 
         <div class="event">
-            <h2>Ribbon Cutting</h2>
-            <p><b>The Diamond Shack</b></p>
-            <p>Join us for the grand opening of The Diamond Shack,
-                Thursday at 1:00 p.m.</p>
-            <p class="eventInfo">more info ...</p>
+            <h2>Events</h2>
+            <p><b>Ribbon Cutting - The Diamond Shack</b><br>
+                Join us for the grand opening of The Diamond Shack,
+                Thursday at 1:00 p.m.<br>
+                <span class="eventInfo">more info ...</span>
+                <!-- ¿QUE HACE SPAN? -->
+            </p>
         </div>
 
         <div class="weather">
             <h2>Weather</h2>
-            <img src="images/clima.png" alt="Weather">
-            <div class="temperature">33°C</div>
-            <div class="tiempo">Partly Cloudy</div>
+            <img src="https://placekitten.com/50/50" loading="lazy" width="50" height="50" alt="Weather">
+            <!--BUSCAR IMAGEN DE 50 X 50 PX -->
+            <div class="temperature">33°C<br>
+                <b>Partly Cloudy</b>
+            </div>
 
             <table>
-                <tr>
-                    <td>Wind Speed:</td>
-                    <td>2.5 km/h</td>
+                <tr class="final">
+                    <td>Humidity:</td>
+                    <td>35%</td>
                 </tr>
-                <tr>
+                <tr class="principio">
                     <td>Wind Chill:</td>
                     <td>N/A</td>
                 </tr>
             </table>
-            <!-- <section class="weatherBottom">
-                <div class="speed">Wind Speed:  2.5 km/h</div>
-                <div class="chill">Wind Chill:  N/A</div>
-            </section> -->
         </div>
 
-        <div class="release">
-            <h2>News Release</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ipsum sint sit facere ipsam ut nobis dolorum voluptas tempora blanditiis velit?
-                Architecto cumque modi maxime sit explicabo assumenda distinctio fuga asperiores?</p>
+        <div class="memberS">
+            <h2>Member Spotlights</h2>
         </div>
 
-        <div class="spotlight1">
+        <div class="transport">
             <h2>Thankful Transport</h2>
-            <img src="images/camion-chico.png" alt="Truck">
-            <p>"We get it there for you!"</p>
-            <section>
-                <p>
-                    <em>hello@thankfultransport.com</em><br>
-                    +999-9999-9999 Website
-                </p>
-            </section>
+            <p>
+                "We get it there for you!"
+            </p>
+            <p>
+                hello@thankfultransport.com<br>
+                +999-9999-9999 Website
+            </p>
         </div>
 
-        <div class="spotlight2">
+        <div class="code">
             <h2>Code Primera</h2>
-            <img src="images/colores.png" alt="Colors">
             <p>
-                <em>An after school coding instructional program.</em>
+                After school coding!
             </p>
             <p>
                 contact@codeprimera.com<br>
-                +999-9999-9999 | Website
+                +999-9999-9999<br>
+                Website
             </p>
-
         </div>
 
-        <div class="spotlight3">
+        <div class="fort">
             <h2>Build A Treefort</h2>
-            <img src="images/house-tree.png" alt="Tree Fort">
             <p>
-                <em>Over 1000 Plans!</em>
+                Over 1000 Plans!
             </p>
             <p>
                 builda@treefort.com<br>
-                +999-9999-9999 | Website
-            </p>
-        </div>
-
-        <div class="join">
-            <h2>Join Us!</h2>
-            <p>
-                Discover how to join the chamber of commerce
-                and how it will benefit your organization!
+                +999-9999-9999<br>
+                Website
             </p>
         </div>
     </main>
 
     <footer>
-        <div class="parte1">
-            <div class="flogo">
-                <img src="images/azteca100.png" alt="Azteca logo">
-            </div>
-            <div class="information">
-                <h3>AZTECA</h3>
-                <p>Chamber of Commerce</p>
-                <p>
-                    Miguel Bernard 322, La Escalera<br>
-                    Ciudad de México, 07320
-                </p>
-            </div>
+        <div class="flogo">
+            <a href="../index.html">
+                <img src="images/azteca150.png" alt="Chamber of Commerce logo">
+            </a>
+        </div>
+
+        <div class="title">
+            <p>
+                <span class="ver">MÉ</span><span class="bla">XI</span><span class="roj">CO</span><br>
+                <span class="resto">Chamber of Commerce</span>
+            </p>
+            <p class="adress">
+                Miguel Bernard 322,<br>
+                La Escalera, CDMX, 07320
+            </p>
         </div>
 
         <div class="location">
-            <p>aztecachambercommerce.com</p>
-            <p>5555-5555</p>
+            <p>
+                aztecachambercommerce.com<br>
+                5555-5555
+            </p>
             <a class="map" href="https://www.google.com/maps/" target="_blank">Location Map</a>
         </div>
 
@@ -184,6 +182,7 @@
             <h4 class="lastupdate">Last Updated: <span id="update"></span></h4>
         </div>
     </footer>
+
     <!-- DEBO SEPARAR LAS FUNCIONES DENTRO DE INDEX.js EN SU RESPECTIVO ARCHIVO -->
     <script src="scripts/hamburguerBotton2.js"></script>
     <script src="scripts/banner.js"></script>
@@ -191,3 +190,5 @@
 </body>
 
 </html>
+
+<!-- /* ESTE ES MI PUNTO SEGURO */ -->
