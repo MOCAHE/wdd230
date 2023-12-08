@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moisés Cano Hernández - WDD230 - Web Fronted Development</title>
+    <meta name="description"
+        content="This is the course assignment portal from the WDD230 course (Web Frontend Development) by Moisés Cano Hernández">
+    <meta name="author" content="Moisés Cano Hernández">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/me.webp" alt="Student Photo">
+        <div id="mode">💡/🕶️</div>
+        <h1>Moisés Cano Hernández</h1>
+    </header>
+    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+    <nav>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html" class="active">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="message">
+            <h1>Rated page sucessfully</h1>
+            <p>
+                Thanks for bringing us the information required, it has been saved in our database, and your rating is
+                very appreciated we will take it to continue improving and bring you a better service.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Moisés Cano Hernández | México</p><br>
+        <p class="lastupdate">Last Modification: <span id="update"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/hamburgerBotton.js"></script>
+</body>
+
+</html>
