@@ -15,7 +15,6 @@
 
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/form.css">
-    <link rel="stylesheet" type="text/css" href="styles/larger.css">
 </head>
 
 <body>
@@ -24,7 +23,6 @@
         <div id="mode">💡/🕶️</div>
         <h1>Moisés Cano Hernández</h1>
     </header>
-    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
     <nav>
         <ul id="primaryNav">
             <li><a href="index.html">Home</a></li>
@@ -45,12 +43,12 @@
             <label class="top">Email* <input type="email" id="mail" name="mail" required
                     pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" placeholder="Please enter a valid email address"></label>
 
-            <label class="top">Page Rating
-                <br>
+            <label class="top">Page Rating<br>
                 <span id="rangevalue">0</span>
-                <input type="range" name="r" id="r" min="0" max="10" value="0" step="1" list="rangevalues"></label>
+                <input type="range" name="r" id="r" min="0" max="10" value="0" step="1" list="rangevalues">
+            </label>
 
-            <!-- <datalist id="rangevalues">
+            <datalist id="rangevalues">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -62,33 +60,11 @@
                 <option value="8">8</option>
                 <option value="9">9</option>
                 <option value="10">10</option>
-            </datalist> -->
+            </datalist>
+
 
             <input type="submit" value="Rate the page" id="submitBtn">
         </form>
-        <!-- Correciones segun ChatGPT -->
-        <!-- <form method="get" action="record.html">
-            <fieldset aria-labelledby="legend">
-                <legend id="legend">Information</legend>
-                <div id="formMessage"></div>
-                <label for="username">Username* <input type="text" id="username" name="username" required></label>
-                <label for="pwd">Password* <input type="password" id="pwd" name="pwd" required pattern="[A-Za-z0-9]{8,}"
-                        placeholder="Alpha numeric only"></label>
-                <label for="conPwd">Confirm Password* <input type="password" id="conPwd" name="conPwd" required
-                        pattern="[A-Za-z0-9]{8,}"></label>
-                <label for="mail">Email* <input type="email" id="mail" name="mail" required
-                        pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$"
-                        placeholder="Please enter a valid email address"></label>
-
-                <label for="r">Page Rating
-                    <br>
-                    <span id="rangevalue">0</span>
-                    <input type="range" name="r" id="r" min="0" max="10" value="0" step="1">
-                </label>
-
-                <input type="submit" value="Rate the page" id="submitBtn">
-            </fieldset>
-        </form> -->
     </main>
     <footer>
         <p>&copy; <span id="year"></span> | Moisés Cano Hernández | México</p><br>

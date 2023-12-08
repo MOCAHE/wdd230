@@ -1,5 +1,5 @@
 :root{
-    --black: #000;
+    --black: hsla(0, 0%, 0%);
     --white: #fff;
     --blue: #072E74;
 }
@@ -33,22 +33,14 @@ ul li:hover a {
 
 header,
 nav,
-h2,
+main,
 footer {
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 1rem;
     box-sizing: border-box;
+    max-width: 100%;
+    padding: 1em;
 }
+/* FIN REGLAS GENERALES */
 
-#mode {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 3rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
 
 header {
     margin-top: 0;
@@ -65,32 +57,6 @@ h1 {
     color: var(--white);
 }
 
-#hamburgerBtn {
-    position: relative;
-    padding: .5em;
-    padding-bottom: 0;
-    font-size: 2rem;
-    color: var(--black);
-    background-color: transparent;
-    border: none;
-}
-
-#hamburgerBtn span:nth-child(1) {
-    display: block;
-}
-
-#hamburgerBtn span:nth-child(2) {
-    display: none;
-}
-
-#hamburgerBtn.open span:nth-child(1) {
-    display: none;
-}
-
-#hamburgerBtn.open span:nth-child(2) {
-    display: block;
-}
-
 #primaryNav {
     list-style: none;
     padding: 0;
@@ -102,14 +68,11 @@ nav{
 }
 
 nav ul {
-    display: none;
-}
-
-nav ul.open {
-    display: block;
+    display: flex;
 }
 
 nav ul li {
+    flex: 1 1 100%;
     text-align: center;
 }
 
@@ -120,125 +83,111 @@ nav ul li a {
     padding: 1.5em;
 }
 
-nav ul li a.active {
-    text-decoration: underline;
-}
-
-
-
-
+/* MAIN */
 main{
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
-    height: 100vh;
+    padding: 1rem;
 }
 
 
 form{
-    width: 60%;
+    width: 30%;
     border: 2px solid var(--black);
     border-radius: 10px;
-    box-sizing: border-box;
     padding: 1em;
 }
 
-#r {
-    width: 100%;
-    max-width: 20rem;
-	margin-bottom: 0;
-    padding: .75rem;
-}
-
-#rangevalues {
-	display: flex;
-    margin-left: 0.8rem;
-
-}
-
-#rangevalues option {
-	flex: 1 1 auto;
-}
-
-form label.top{
+form label.top {
     display: block;
     margin-bottom: 2rem;
+    width: 100%; /* Asegura que la etiqueta abarque el ancho completo disponible */
 }
 
-form label.top input{
+/* LA ÚLTIMA label.top NO TENDRÁ MARGENES
+form label.top:last-of-type {
+    margin-bottom: 0;
+} */
+
+form label.top input {
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
     display: block;
-    padding: .75rem;
-    width: 100%;
-    max-width: 20rem;
+    width: 100%; /* Asegura que el input abarque el ancho completo de su contenedor (la etiqueta) */
+    padding: 1em;
     border: 1px solid #999;
     border-radius: 4px;
+    margin: 0; /* Elimina el margen predeterminado para evitar inconsistencias */
 }
 
+/* BORDE IZQ NEGRO ANTES DE VALIDAR */
 form label.top input:required{
     border-left: black solid 1em;
 }
 
+/* BORDE IZQ VERDE DESPUES DE VALIDAR */
 form label.top input:required:valid{
     border-left: green solid 1em;
 }
 
+/* INFORMATION (Title)*/
 #legend{
     margin-bottom: 2rem;
-    font-size: 1.2rem;
-    font-weight: bolder;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-form label.top #r{
-    padding:0.75rem;
-    margin-bottom: -2rem;
+/* ANCHO DE LA BARRA */
+#r {
     width: 100%;
-    max-width: 20rem;
 }
 
+/* ESTO MODIFICA LOS NUMEROS DE LA BARRA, DEBO CORREGIR */
+/* #rangevalues {
+	display: flex;
+	width: 100%;
+}
+
+#rangevalues option {
+	flex: auto;
+} */
+
+/* BOTÓN AZUL */
 #submitBtn{
-    margin-top: 2rem;
-    padding:  0.75rem 1.5rem;
+    padding: 1rem 2rem;
     width: 100%;
-    max-width: 20rem;
     border: none;
     border-radius: 10px;
     background: var(--blue);
     color: var(--white);
 }
 
-#formMessage{
-    display: none;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
 
-#rangevalue{
-    margin-top: 0.3rem;
-    font-size: 1.4rem;
-}
-
+/* ESTO ES DE LA PÁGINA record.html */
 #recordMessage h1{
     color: var(--white);
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 1rem;
     background: var(--blue);
     width: 80%;
     border-radius: 10px;
-}
-
-#recordMessage p{
-    margin: 0 auto;
-    font-size: 2rem;
-    margin-bottom: 12rem;
-    margin-top: 2rem;
     text-align: center;
 }
 
+/* ESTO ES DE LA PÁGINA record.html */
+#recordMessage p{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: justify;
+    padding: 2rem;
+}
 
 
 
+
+/* Footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -255,7 +204,17 @@ footer p {
     color: yellow;
 }
 
+
 /* DARK MODE */
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
 .dark-mode {
     background-color: #000;
     color: #fff;
@@ -293,3 +252,22 @@ footer p {
 .dark-mode .card h3 {
     border: 1px solid #eee;
 }
+
+
+/* PRUEBA PARA QUE FOOTER SE QUEDE ABAJO 
+POR CHATGPT*/
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; /* Hace que el contenido principal crezca para ocupar todo el espacio disponible */
+}
+
+footer {
+    margin-top: auto; /* Coloca el pie de página al final del contenedor flex */
+}
+/* SI SIRVIO */
