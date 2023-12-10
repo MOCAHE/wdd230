@@ -430,7 +430,7 @@ textarea {
 
 form input.submitBtn {
     border: none;
-    background-color: black;
+    background-color: blue;
     color: white;
     border-radius: 5px;
     padding: .75rem 1.5rem;
