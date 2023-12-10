@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <!-- No sé si lo de arriba es necesario -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MÉXICO Chamber of Commerce</title>
-    <meta name="description" content="Home page of México Chamber of Commerce">
+    <title>Join</title>
+    <meta name="description" content="This is the Join Page">
     <meta name="author" content="Moisés Cano Hernández">
     <link rel="icon" href="../images/favicon.ico">
 
@@ -48,9 +48,9 @@
         <nav>
             <ul id="primaryNav">
                 <li><a href="../chamber/index.html">Home</a></li>
-                <li><a href="#">Discover</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
             </ul>
         </nav>
 
@@ -70,7 +70,62 @@
     </header>
 
     <main>
+        <h2>Membership Application Form</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top"> First Name* <input type="text" required name="fname" id="fname"></label>
+                <label class="top">Last Name* <input type="text" required name="lname" id="lname"></label>
+                <label class="top">Title or Position <input type="text" name="title" id="title" required
+                        pattern="^[A-Za-z \-]{7,}$"></label>
+                <label class="top">Email <input type="email" name="email" required id="email"
+                        placeholder="yourmail@mail.com"></label>
+                <label class="top">Phone Number <input type="tel" name="phone" id="phone"> </label>
+                <label class="top">Business / Organization's Name* <input type="text" required name="name"
+                        id="name"></label>
+            </fieldset>
 
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label class="sbs"><input type="radio" name="level" value="np membership">NP Membership</label>
+                NP Membership is tailored for non-profit organizations, providing essential benefits such as a fee
+                waiver, exclusive
+                resources, participation in community events, and recognition on the platform, all at no cost.
+                <hr>
+                <label class="sbs"><input type="radio" name="level" value="bronze membership">Bronze
+                    Membership</label>
+                For those seeking additional perks, our Bronze Membership offers event discounts, an exclusive
+                newsletter, access to
+                webinars, and basic advertising for a monthly fee of $50.
+                <hr>
+                <label class="sbs"><input type="radio" name="level" value="silver membership">Silver
+                    Membership</label>
+                Silver Membership enhances your experience with featured advertising, personalized advisory
+                sessions, extended
+                discounts, and exclusive access to VIP events, available at a monthly cost of $100.
+                <hr>
+                <label class="sbs"><input type="radio" name="level" value="gold membership">Gold Membership</label>
+                Gold Membership is designed to elevate your presence. With principal event sponsorship, premium
+                advertising, priority
+                access to new features, and executive consultancy sessions, this top-tier membership comes at a
+                monthly investment of
+                $200.
+            </fieldset>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input type="hidden" id="hiddenType" name="hiddenType" value="dynamic">
+            <input type="hidden" id="date" name="date">
+            <input type="hidden" id="time" name="time">
+
+            <fieldset>
+                <legend>Description/Date</legend>
+                <label class="top">Brief Company's Description<textarea name="textarea" id="textarea" cols="30"
+                        rows="10"></textarea></label>
+                <label class="top">Form's Completion Date<input type="date" name="completeDate"></label>
+            </fieldset>
+
+            <input type="submit" value="Join México Chamber" class="submitBtn">
+        </form>
     </main>
 
     <footer>
@@ -109,7 +164,8 @@
     <script src="scripts/hamburguerBotton2.js"></script>
     <script src="scripts/banner.js"></script>
     <script src="../scripts/getDates.js"></script>
-    <script src="scripts/discover.js"></script>
 </body>
 
 </html>
+
+<!-- /* ESTE ES MI PUNTO SEGURO */ -->

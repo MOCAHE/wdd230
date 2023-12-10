@@ -45,9 +45,10 @@
     }
 
     main {
+        display: grid;
         box-sizing: border-box;
         padding-bottom: 1em;
-        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr; */
     }
 
     .cdmx {
@@ -101,8 +102,25 @@
         width: 100%;
     }
 
-    /* MAIN DE discover.html VERSIÓN ESCRITORIO*/
+    /* MAIN DISCOVERY DESKTOP VIEW*/
 
+    /* MAIN JOIN DESKTOP VIEW*/
+    form {
+        grid-column: 1 / 4;
+    }
 
+    /* THANKYOU DESKTOP VIEW*/
+    #thankyouPage{
+        margin-top: 1rem;
+        box-shadow: 0px 0px 30px #444;
+    }
+
+    #thankyouPage h1{
+        box-shadow: none;
+    }
+
+    #thankyouPage p{
+        box-shadow: none;
+    }
 
 }

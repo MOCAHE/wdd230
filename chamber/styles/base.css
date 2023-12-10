@@ -168,7 +168,7 @@ main {
     box-sizing: border-box;
 }
 
-main>div {
+main > div {
     background-color: #ffffff;
     border: 1px solid #000000;
     padding: 1em;
@@ -368,4 +368,93 @@ footer h4 {
     color: yellow;
 }
 
-/* MAIN DE discover.html VERSIÓN MOBIL*/
+/* PRUEBA PARA QUE FOOTER SE QUEDE ABAJO 
+POR CHATGPT*/
+html, body {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; /* Hace que el contenido principal crezca para ocupar todo el espacio disponible */
+}
+
+footer {
+    margin-top: auto; /* Coloca el pie de página al final del contenedor flex */
+}
+/* SI SIRVIO */
+
+/* MAIN DISCOVERY MOBIL VIEW*/
+
+/* MAIN JOIN MOBIL VIEW*/
+form fieldset {
+    margin: 1rem 0;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+form legend {
+    color: blue;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+}
+
+form label.top input {
+    display: block;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #eee;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+textarea {
+    width: 100%;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    max-width: 20rem;
+}
+
+
+
+/* THANKYOU MOBIL VIEW*/
+#thankyouPage h1{
+    color: white;
+    margin-bottom: 1rem;
+    background: green;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px #444;
+}
+
+#thankyouPage p{
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid black;
+    box-shadow: 0px 0px 30px #444;
+}
