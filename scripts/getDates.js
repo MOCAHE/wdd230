@@ -6,7 +6,7 @@ let Year = currentDate.getFullYear();
 document.querySelector("#year").textContent = Year;
 
 
-// JOIN PAGE
+// JOIN PAGE NO ESTOY SEGURO DE HABERLO OCUPADO
 document.addEventListener('DOMContentLoaded', function() {
 var currentDate = new Date();
 
