@@ -428,7 +428,7 @@ textarea {
     width: 100%;
 }
 
-form input.submitBtn {
+form input .submitBtn {
     border: none;
     background-color: blue;
     color: white;
