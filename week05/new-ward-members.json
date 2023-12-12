@@ -1,0 +1,18 @@
+{
+    "familyName" : "Cano Rojas",
+    "joinWardDate" : "2004-01-01",
+    "familySize" : 2,
+    "visitedByBishopric" : true,
+    "individualFamilyMembers" : [
+        {
+            "name": "Amali Rojas",
+            "gender": "female",
+            "Birthdate": "1995-06-18"
+        },
+        {
+            "name": "Moisés Cano",
+            "gender": "male",
+            "Birthdate": "1996-06-18"
+        }
+    ]
+}
