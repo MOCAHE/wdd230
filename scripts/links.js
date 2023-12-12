@@ -1,4 +1,4 @@
-const baseURL = ''; /*AGREGAR MI LINK*/
+const baseURL = 'https://mocahe.github.io/wdd230/';
 const linksURL = ''; /*AGREGAR MI LINK*/
 const ulList = document.querySelector('#links');
 
