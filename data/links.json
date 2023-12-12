@@ -1,39 +1,95 @@
 {
-    "weeks" : [
+    "weeks": [
         {
-            "week" : "Week 1",
-            "links" : [
+            "week": "Week 1",
+            "links": [
                 {
-                    "url" : "",
-                    "title" : ""
+                    "url": "week01/holygrail.html",
+                    "title": "Layout"
                 },
                 {
-                    "url" : "",
-                    "title" : ""
+                    "url": "week01/media-query.html",
+                    "title": "Query"
                 },
                 {
-                    "url" : "",
-                    "title" : ""
+                    "url": "https://codepen.io/MOCAHE/pen/zYMBpbm",
+                    "title": "Applied JavaScrip"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Web Design Principles"
                 },
                 {
-                    "url" : "",
-                    "title" : ""
+                    "url": "https://codepen.io/MOCAHE/pen/ExOXOpp",
+                    "title": "Responsive Menu"
                 },
                 {
-                    "url" : "",
-                    "title" : ""
+                    "url": "week02/bom.html",
+                    "title": "JavaScript: DOM Manipulation"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
                 },
                 {
-                    "url" : "",
-                    "title" : ""
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Load"
                 },
                 {
-                    "url" : "",
-                    "title" : ""
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/MOCAHE/pen/JjxxEvP?editors=1100",
+                    "title": "CSS Pseudo-Classes"
                 },
                 {
-                    "url" : "",
-                    "title" : ""
+                    "url": "week04/images/combinators.webp",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Table"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/MOCAHE/pen/NWomGpr?editors=1100",
+                    "title": "Pseudo-Elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API"
                 }
             ]
         }
