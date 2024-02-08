@@ -28,6 +28,10 @@ header {
     padding-bottom: 10px;
 }
 
+.ver, .bla, .roj {
+    font-weight: bold;
+}
+
 .ver {
     color: green;
 }
