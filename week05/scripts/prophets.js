@@ -10,10 +10,14 @@ async function getProphetData() {
 
 const displayProphets = (prophets) =>{
     prophets.forEach((prophet) => {
-        let card = document.createElement('section');
-        let fullName = document.createElement('h2');
-        let portrait = document.createElement('img');
+        const card = document.createElement('section');
+        const fullName = document.createElement('h2');
+        const portrait = document.createElement('img');
+        // EXTRA AGREGADO POR MCH
+        const birth = document.createElement('p')
 
+        // EXTRA AGREGADO POR MCH
+        birth.innerHTML = `Date of Birth: ${prophet.birthdate} <br> Place of Birth: ${prophet.birthplace}`;
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
@@ -22,9 +26,13 @@ const displayProphets = (prophets) =>{
         portrait.setAttribute('height', '440');
 
         card.appendChild(fullName);
+        // EXTRA AGREGADO POR MCH
+        card.appendChild(birth)
         card.appendChild(portrait);
         cards.appendChild(card);
     });
 }
 
 getProphetData();
+
+// AQUI HICE MODIFICACIONES
