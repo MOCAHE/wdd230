@@ -48,7 +48,6 @@
         display: grid;
         box-sizing: border-box;
         padding-bottom: 1em;
-        /* grid-template-columns: 1fr 1fr 1fr; */
     }
 
     .cdmx {
@@ -102,7 +101,6 @@
         width: 100%;
     }
 
-    /* MAIN DISCOVERY DESKTOP VIEW*/
 
     /* MAIN JOIN DESKTOP VIEW*/
     form {
@@ -121,6 +119,23 @@
 
     #thankyouPage p{
         box-shadow: none;
+    }
+
+
+    /* MAIN DISCOVER DESKTOP VERSION */
+    .discover{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 0;
+        gap: .5rem;
+    }
+
+    .dsidebar, .dimages{
+        display: flex; /* Usamos flexbox */
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        justify-content: center; /* Centramos verticalmente los elementos */
+        align-items: center; /* Centramos horizontalmente los elementos */
     }
 
 }
