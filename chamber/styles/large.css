@@ -1,10 +1,6 @@
 @media only screen and (min-width: 500px) {
 
     /* HEADER */
-    .title h1 {
-        color: #de0b0b;
-    }
-
     header {
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -131,11 +127,7 @@
         gap: .5rem;
     }
 
-    .dsidebar, .dimages{
-        display: flex; /* Usamos flexbox */
-        flex-direction: column; /* Los elementos se apilan verticalmente */
-        justify-content: center; /* Centramos verticalmente los elementos */
-        align-items: center; /* Centramos horizontalmente los elementos */
+    .dimages img:hover{
+        box-shadow: 0 0 50px black;
     }
-
 }
