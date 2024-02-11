@@ -7,7 +7,6 @@
 body {
     max-width: 960px;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 
 header {
@@ -479,6 +478,10 @@ form input .submitBtn {
     margin-bottom: 1rem;
 }
 
+.dimages{
+    border: 1px solid red;
+    align-content: center;
+}
 
 h4{
     margin-bottom: 0;
@@ -497,3 +500,6 @@ h5{
     text-align: center;
     margin-bottom: 0;
 }
+
+/* SE DEBE HACER UN AJUSTE YA QUE SE COMPARTE CON TODAS LAS PAGINA DE CHAMBER
+POR LO QUE SE DEBE EVITAR REGLAS GENERICAS EN MAIN DESDE EL INCIO*/
