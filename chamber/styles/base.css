@@ -165,10 +165,8 @@ main {
 }
 
 main > div {
-    background-color: #ffffff;
     border: 1px solid #000000;
     padding: 1em;
-    background-color: rgba(128, 128, 128, 0.114);
 }
 
 .cdmx {
@@ -465,8 +463,30 @@ form input .submitBtn {
 .dsidebar, .dimages{
     display: flex; /* Usamos flexbox */
     flex-direction: column; /* Los elementos se apilan verticalmente */
-    justify-content: center; /* Centramos verticalmente los elementos */
+    justify-content: auto; /* Centramos verticalmente los elementos */
     align-items: center; /* Centramos horizontalmente los elementos */
+    gap: 1rem;
+}
+
+.dsidebar > div {
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 1rem;
+}
+
+.events:last-child {
+    margin-bottom: 1rem;
+}
+
+
+h4{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h5{
+    margin-top: 0;
 }
 
 .dimages img:hover {
