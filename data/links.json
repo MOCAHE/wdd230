@@ -8,12 +8,12 @@
                     "title": "Layout"
                 },
                 {
-                    "url": "week01/media-query.html",
-                    "title": "Query"
-                },
-                {
                     "url": "https://codepen.io/MOCAHE/pen/zYMBpbm",
                     "title": "Applied JavaScrip"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
                 }
             ]
         },
