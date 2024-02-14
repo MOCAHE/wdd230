@@ -4,16 +4,13 @@
     Font-family: "Roboto", Arial, sans-serif;
 }
 
-body {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
+/* HEADER GENERAL */
 header {
     display: grid;
     background-color: #000000;
     padding: 15px;
     grid-template-columns: 65% 25% 10%;
+    align-items: center;
 }
 
 .hlogo {
@@ -94,12 +91,6 @@ nav {
     grid-column: 1/4;
 }
 
-#primaryNav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 nav ul {
     display: none;
 }
@@ -124,12 +115,8 @@ nav ul li a {
     /* make the clickable area bigger. Puedes tocalo con los dedos */
     text-decoration: none;
     color: #ffffff;
+    font-weight: bold;
     border-top: 1px solid #ffffff;
-}
-
-nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
-    /*Mantiene un color fijo (active es la clase)*/
 }
 
 nav ul li a:hover {
@@ -138,12 +125,10 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
-/* HEADER */
 .container4 {
     grid-column: 1/4;
     grid-row: 3/4;
     text-align: center;
-    box-sizing: border-box;
     padding: 1rem;
 }
 
@@ -156,161 +141,21 @@ nav ul li a:hover {
     padding: 0;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-    box-sizing: border-box;
-}
-
-main > div {
-    border: 1px solid #000000;
-    padding: 1em;
-}
-
-.cdmx {
-    position: relative;
-    padding: 0;
-}
-
-.cdmx img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.cdmx p a{
-    text-decoration: none;
-}
-
-.texto p {
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-    background-color: yellow;
-    color: #000000;
-    padding: 1rem;
-    border-radius: 60px;
-}
-
-.event h2{
-    text-align: left;
-}
-
-.event p {
-    border-top: 1px solid black; /* Línea negra en la parte superior */
-    border-bottom: 1px solid black; /* Línea negra en la parte inferior */
-    padding-top: 10px; /* Espacio entre la línea superior y el texto */
-    padding-bottom: 10px; /* Espacio entre la línea inferior y el texto */
-}
-
-.eventInfo {
-    color: blue;
-}
-
-/*  RETO PERSONAL, CENTRA LA TABLA JUNTO CON EL CONTENIDO PREVIO*/
-.weather {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Icono del clima a la izquierda, detalles a la derecha */
-    gap: .5em;
-}
-
-.weather h2 {
-    grid-column: 1 / -1; /* El título ocupa toda la primera fila */
-    margin: 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid black; /* Línea negra en la parte inferior */
-}
-
-/*  RETO PERSONAL, CENTRA LA IMAGEN EN EL EJE Y*/
-.weather img {
-    grid-row: 2; /* La imagen va en la segunda fila */
-    justify-self: end; /* Alinea la imagen al final de su celda */
-}
-
-.temperature{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/*  RETO PERSONAL, CENTRA LA TABLA JUNTO CON EL CONTENIDO PREVIO*/
-table{
-    grid-column: 1/3;
-    margin: 0 auto;
-}
-
-.weather .final td:first-child,
-.weather .principio td:first-child {
-    text-align: right;
-    padding-right: .5em;
-}
-
-.weather .final td:last-child,
-.weather .principio td:last-child {
-    text-align: left;
-}
-
-.memberS{
-    border: none;
-    background-color: white;
-    padding: 0;
-    margin-top: 1em;
-    margin-bottom: 0;
-    text-align: center;
-    color: rgb(0, 0, 150);
-}
-
-.transport h2{
+#primaryNav {
+    list-style: none;
+    padding-top: 1rem;
     margin: 0;
 }
 
-.transport p:nth-child(2) {
-    text-align: right;
-    margin: 0;
-}
-
-.transport p:nth-child(3){
-    text-align: center;
-    color: blue;
-}
-
-.code h2{
-    margin: 0;
-}
-
-.code p:nth-child(2) {
-    text-align: right;
-    margin: 0;
-}
-
-.code p:nth-child(3){
-    text-align: center;
-    color: blue;
-}
-
-.fort h2{
-    margin: 0;
-}
-
-.fort p:nth-child(2) {
-    text-align: right;
-    margin: 0;
-}
-
-.fort p:nth-child(3){
-    text-align: center;
-    color: blue;
-}
-
+/* FOOTER GENERAL*/
 footer {
     display: grid;
+    justify-content: center;
     background-color: #000000;
-    padding: 1em;
+    padding: 1rem;
     grid-template-rows: 50% 30% 20%;
     gap: 1em;
     align-items: center;
-    justify-content: center;
 }
 
 .flogo img{
@@ -367,27 +212,162 @@ footer h4 {
     color: yellow;
 }
 
-/* PRUEBA PARA QUE FOOTER SE QUEDE ABAJO 
-POR CHATGPT*/
-html, body {
+
+
+
+/* MAIN GENERAL */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: .5rem;
+}
+
+
+
+/* MAIN HOME */
+.home > div:not(.cdmx){
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.cdmx {
+    position: relative;
+}
+
+.cdmx img {
+    object-fit: cover;
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
+}
+
+.cdmx p a{
+    text-decoration: none;
+}
+
+.texto p {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    background-color: yellow;
+    color: #000000;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 60px;
+}
+
+.event h2{
+    text-align: left;
+}
+
+.event p {
+    border-top: 1px solid black; /* Línea negra en la parte superior */
+    border-bottom: 1px solid black; /* Línea negra en la parte inferior */
+    padding-top: 10px; /* Espacio entre la línea superior y el texto */
+    padding-bottom: 10px; /* Espacio entre la línea inferior y el texto */
+}
+
+.eventInfo {
+    color: blue;
+}
+
+/*  RETO PERSONAL, CENTRA LA TABLA JUNTO CON EL CONTENIDO PREVIO*/
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Icono del clima a la izquierda, detalles a la derecha */
+    gap: .5rem;
+}
+
+.weather h2 {
+    grid-column: 1 / -1; /* El título ocupa toda la primera fila */
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black; /* Línea negra en la parte inferior */
+}
+
+/* ELIMINAR O CORREGIR DESDE AQUÍ*/
+/* .weather img { */
+    /* La imagen va en la segunda fila */
+    /* grid-row: 2; */
+    /* Alinea la imagen al final de su celda*/
+    /* justify-self: end; */
+/* } */
+/* 
+.temperature{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-main {
-    flex-grow: 1; /* Hace que el contenido principal crezca para ocupar todo el espacio disponible */
+table{
+    grid-column: 1/3;
+    margin: 0 auto;
 }
 
-footer {
-    margin-top: auto; /* Coloca el pie de página al final del contenedor flex */
+.weather .final td:first-child,
+.weather .principio td:first-child {
+    text-align: right;
+    padding-right: .5em;
 }
-/* SI SIRVIO */
 
-/* MAIN DISCOVERY MOBIL VIEW*/
+.weather .final td:last-child,
+.weather .principio td:last-child {
+    text-align: left;
+} */
 
-/* MAIN JOIN MOBIL VIEW*/
+/* HASTA AQUÍ */
+
+.memberS{
+    border: none;
+    text-align: center;
+    color: rgb(0, 0, 150);
+}
+
+.transport h2{
+    margin: 0;
+}
+
+.transport p:nth-child(2) {
+    text-align: right;
+    margin: 0;
+}
+
+.transport p:nth-child(3){
+    text-align: center;
+    color: blue;
+}
+
+.code h2{
+    margin: 0;
+}
+
+.code p:nth-child(2) {
+    text-align: right;
+    margin: 0;
+}
+
+.code p:nth-child(3){
+    text-align: center;
+    color: blue;
+}
+
+.fort h2{
+    margin: 0;
+}
+
+.fort p:nth-child(2) {
+    text-align: right;
+    margin: 0;
+}
+
+.fort p:nth-child(3){
+    text-align: center;
+    color: blue;
+}
+
+
+
+/* MAIN JOIN*/
 form fieldset {
     margin: 1rem 0;
     padding: 15px;
@@ -439,10 +419,9 @@ form input .submitBtn {
 
 
 
-/* THANKYOU MOBIL VIEW*/
+/* MAIN THANKYOU */
 #thankyouPage h1{
     color: white;
-    margin-bottom: 1rem;
     background: green;
     text-align: center;
     border-radius: 5px;
@@ -453,53 +432,77 @@ form input .submitBtn {
     margin: 0 auto;
     font-size: 2rem;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     border: 1px solid black;
     box-shadow: 0px 0px 30px #444;
 }
 
-/* DISCOVER*/
-.dsidebar, .dimages{
+
+
+/* MAIN DISCOVER*/
+.dtitle{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.discover{
     display: flex; /* Usamos flexbox */
     flex-direction: column; /* Los elementos se apilan verticalmente */
-    justify-content: auto; /* Centramos verticalmente los elementos */
     align-items: center; /* Centramos horizontalmente los elementos */
     gap: 1rem;
 }
 
-.dsidebar > div {
-    box-sizing: border-box;
-    background-color: #fff;
-    border: 1px solid #000;
+.visit {
+    text-align: center;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 1rem;
+    background-image: radial-gradient(circle, #264567, #000); /* Modifica los colores según tus preferencias */
+    color: white;
+    box-shadow: 0px 0px 50px black;
+}
+
+
+h3{
     padding: 1rem;
 }
 
-.events:last-child {
+.events-list > li {
+    border: 1px solid #000;
+    list-style: none;
+    padding: .5rem;
     margin-bottom: 1rem;
 }
 
-.dimages{
-    border: 1px solid red;
-    align-content: center;
+.event-date {
+    display: block;
+    font-style: oblique;
+    font-weight: lighter;
 }
 
-h4{
-    margin-bottom: 0;
+h4 {
     text-align: center;
+    animation: fadeInOut 3s ease-in-out infinite alternate; /* Agregar una animación de fade in-out */
 }
 
-h5{
+/* ANIMACIÓN CON ERRORES DE CONTRASTE */
+/* @keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+figure{
+    margin: 4rem;
+}
+
+figure p{
     margin-top: 0;
 }
 
 .dimages img:hover {
     box-shadow: none; /* Sobrescribe la regla de box-shadow definida en large.css */
 }
-
-.dtitle{
-    text-align: center;
-    margin-bottom: 0;
-}
-
-/* SE DEBE HACER UN AJUSTE YA QUE SE COMPARTE CON TODAS LAS PAGINA DE CHAMBER
-POR LO QUE SE DEBE EVITAR REGLAS GENERICAS EN MAIN DESDE EL INCIO*/

@@ -1,33 +1,28 @@
 @media only screen and (min-width: 500px) {
-
-    /* HEADER */
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
     header {
-        display: grid;
         grid-template-columns: auto 1fr auto;
-        align-items: center;
-        padding: 15px;
-    }
-
-    nav ul li a:hover {
-        background-color: #fff;
-        color: #000000;
-        /*Cada vez que pases el mouse, se hará más obscuro (porque ya elejimos color arriba)*/
-    }
-
-    .socialMedia {
-        grid-column: 3/4;
-        grid-row: 1;
-        align-self: center;
-        justify-self: center;
-    }
-
-    #hamburgerBtn {
-        display: none;
     }
 
     nav {
         grid-row: 1;
         grid-column: 2/3;
+    }
+
+    nav ul li a{
+        border-top: none;
+    }
+
+    .socialMedia {
+        grid-column: 3/4;
+    }
+
+    #hamburgerBtn {
+        display: none;
     }
 
     #primaryNav {
@@ -36,23 +31,23 @@
         align-items: center;
     }
 
-    nav ul li a {
-        border-top: none;
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
-    main {
-        display: grid;
-        box-sizing: border-box;
-        padding-bottom: 1em;
+    .parte2{
+        margin-top: auto;
+        width: 100%;
     }
 
+
+    /* MAIN HOME */
     .cdmx {
         grid-column: 1/4;
         grid-row: 1/2;
-    }
-
-    .memberS{
-        display: none;
     }
 
     .event{
@@ -63,6 +58,10 @@
     .weather {
         grid-column: 3/4;
         grid-row: 2/3;
+    }
+
+    .memberS{
+        display: none;
     }
 
     .transport {
@@ -81,50 +80,40 @@
         display: initial;
         grid-column: 3/4;
         grid-row: 3/4;
-        text-align: center;
         box-shadow: 0px 0px 30px #444;
     }
 
-    footer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        width: 100%;
-    }
 
-    .parte2{
-        margin-top: auto;
-        width: 100%;
-    }
-
-
-    /* MAIN JOIN DESKTOP VIEW*/
-    form {
-        grid-column: 1 / 4;
-    }
 
     /* THANKYOU DESKTOP VIEW*/
     #thankyouPage{
-        margin-top: 1rem;
         box-shadow: 0px 0px 30px #444;
     }
 
     #thankyouPage h1{
         box-shadow: none;
+        border-radius: 0;
+        padding: 1rem;
+        margin: 0;
     }
 
     #thankyouPage p{
         box-shadow: none;
+        border: none;
     }
+
 
 
     /* MAIN DISCOVER DESKTOP VERSION */
     .discover{
-        box-sizing: border-box;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-bottom: 0;
+        align-items: self-start;
         gap: .5rem;
+    }
+
+    .dsidebar{
+        margin: 0;
     }
 
     .dimages img:hover{
