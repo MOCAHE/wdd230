@@ -44,6 +44,7 @@
     }
 
 
+
     /* MAIN HOME */
     .cdmx {
         grid-column: 1/4;
@@ -104,7 +105,7 @@
 
 
 
-    /* MAIN DISCOVER DESKTOP VERSION */
+    /* MAIN DISCOVER */
     .discover{
         display: grid;
         grid-template-columns: 1fr 1fr;
