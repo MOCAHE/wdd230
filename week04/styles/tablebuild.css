@@ -18,13 +18,13 @@ thead :first-child th{
     padding: 1em 2em;
 }
 
-thead tr:nth-child(2){
+thead tr:nth-child(even){
     background-color: #333333;
     color: white;
 }
 
 /* Establece el fondo de la línea de zebra solo para la segunda fila en tbody */
-tbody tr:nth-child(2) {
+tbody tr:nth-child(odd) {
     background-color: #eeeeee; /* Utiliza el color definido en :root */
 }
 

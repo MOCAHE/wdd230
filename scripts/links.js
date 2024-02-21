@@ -7,6 +7,7 @@ async function getLinks(){
         const response = await fetch(linksURL);
         if (response.ok) {
             const data = await response.json();
+            // console.log(data);
             displayLinks(data);
         } else {
             throw Error(await response.text());
@@ -16,6 +17,7 @@ async function getLinks(){
     }
 }
 
+// MIS COMPAS Y YO
 function displayLinks(data){
     let weeks = data.weeks
     weeks.forEach((week) => {
@@ -29,10 +31,38 @@ function displayLinks(data){
                 liItem.innerHTML += `<a class='link' href="${link.url}">${link.title}</a>`
             }
             counter++;
-
         })
         ulList.appendChild(liItem);
     });
 }
+
+// CHATGPT
+// function displayLinks(linksData) {
+//     linksData.weeks.forEach((weekObj) => {
+//         const weekTitle = weekObj.week;
+//         const links = weekObj.links;
+
+//         // Creamos un elemento <li> para la semana
+//         const liWeek = document.createElement('li');
+//         liWeek.innerHTML = `${weekTitle}: `;
+
+//         links.forEach((link, index) => {
+//             // Verificamos si el enlace es absoluto o relativo
+//             const url = link.url.startsWith('http') ? link.url : baseURL + link.url;
+//             const linkHTML = `<a href="${url}">${link.title}</a>`;
+
+//             // Añadimos el enlace al HTML del elemento li
+//             liWeek.innerHTML += linkHTML;
+
+//             // Si no es el último enlace, añadimos el separador
+//             if (index < links.length - 1) {
+//                 liWeek.innerHTML += ' | ';
+//             }
+//         });
+
+//         // Agregamos la semana y sus enlaces al ulList
+//         ulList.appendChild(liWeek);
+//     });
+// }
 
 getLinks();

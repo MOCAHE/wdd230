@@ -34,5 +34,3 @@ const displayProphets = (prophets) =>{
 }
 
 getProphetData();
-
-// AQUI HICE MODIFICACIONES
