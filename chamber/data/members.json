@@ -1,0 +1,73 @@
+{
+    "directory": [
+        {
+            "name": "Walmart Express",
+            "address": "Av. Montevideo 360",
+            "phone": "5555863224",
+            "url": "https://super.walmart.com.mx/",
+            "image": "https://i5.walmartimages.com/dfw/63fd9f59-b3e1/7a569e53-f29a-4c3d-bfaf-6f7a158bfadd/v1/walmartLogo.svg",
+            "membership": "Bronze",
+            "join": "1 year"
+        },
+
+        {
+            "name": "Plaza Lindavista",
+            "address": "Av. Montevideo 363",
+            "phone": "5557263100",
+            "url": "https://plazalindavista.mx/",
+            "image": "https://plazalindavista.mx/wp-content/uploads/2021/09/Logo_Plaza.png",
+            "membership": "Golden",
+            "join": "8 years"
+        },
+
+        {
+            "name": "Sanborns",
+            "address": "Av. Montevideo 313",
+            "phone": "5557528061",
+            "url": "https://www.sanborns.com.mx/",
+            "image": "https://www.sanborns.com.mx/favicon3.png",
+            "membership": "Golden",
+            "join": "3 years"
+        },
+
+        {
+            "name": "Costco",
+            "address": "Av. Insurgentes Nte. 1320",
+            "phone": "5557475680",
+            "url": "http://www.costco.com.mx/",
+            "image": "https://www.costco.com.mx/medias/sys_master/images/hbf/h82/210947768549406.png",
+            "membership": "Silver",
+            "join": "9 months"
+        },
+
+        {
+            "name": "Banco BBVA",
+            "address": "Av Fortuna 334-Piso 1, Loc. SB-03",
+            "phone": "5552262663",
+            "url": "https://www.bbva.mx/",
+            "image": "https://www.bbva.mx/content/dam/public-web/global/images/favicon/v1/favicon.ico",
+            "membership": "Golden",
+            "join": "4 years"
+        },
+
+        {
+            "name": "Sky Tower Lindavista",
+            "address": "Av. Insurgentes Nte. 1346",
+            "phone": "5569308129",
+            "url": "https://skytowerlindavista.com/",
+            "image": "https://skytowerlindavista.com/wp-content/uploads/2022/05/BANNER-MP.png",
+            "membership": "NP",
+            "join": "3 months"
+        },
+
+        {
+            "name": "AutoZone Refacciones",
+            "address": "Av Instituto Politécnico Nacional 5102",
+            "phone": "5557193611",
+            "url": "https://www.autozone.com.mx/",
+            "image": "https://www.autozone.com.mx/images/logoautozonemx.svg",
+            "membership": "Bronze",
+            "join": "5 months"
+        }
+    ]
+}
