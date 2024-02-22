@@ -1,54 +1,85 @@
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const weatherIconEl = document.getElementById("current-weather-icon");
+const currentTempEl = document.getElementById("current-temp");
+const weatherDescEl = document.getElementById("current-weather-desc");
+const forecastEl = document.querySelector(".weather-forecast-container");
+// Coordenadas de Ciudad de México
+const lat = 19.45;
+const lon = -99.12;
+const weatherApiKey = "41097c3e44d32ccc023c97b5946ed90b";
+const baseUrl = "https://api.openweathermap.org/data/2.5/"
+const currentWeatherEndpoint = `/weather?lat=${lat}&lon=${lon}&appid=${weatherApiKey}&units=metric`;
+const forecastWeatherEndpoint = `forecast?lat=${lat}&lon=${lon}&appid=${weatherApiKey}&units=metric`;
 
-// culicanan
-const url = 'http://api.openweathermap.org/data/2.5/forecast?lat=24.80&lon=-107.38&appid=41097c3e44d32ccc023c97b5946ed90b';
-
-async function apiFetch(){
+async function getCurrentWeatherData() {
     try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            // console.log(data);
-            displayResults(data);
-        } else {
-            throw Error(await response.text());
+        const response = await fetch(baseUrl + currentWeatherEndpoint);
+        if (!response.ok) {
+            throw new Error(await response.text());
         }
+        const data = await response.json();
+        displayCurrentWeather(data);
     } catch (error) {
         console.log(error);
     }
 }
 
-function displayResults(data){
-    // Limpiar contenido anterior
-    currentTemp.innerHTML = '';
-    captionDesc.textContent = '';
+const displayCurrentWeather = (data) => {
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
 
-    // Iterar sobre los datos para los próximos tres momentos (3 días)
-    for (let i = 0; i < 3; i++) {
-        const momentData = data.list[i];
-        const temp = momentData.main.temp;
-        const iconsrc = `https://openweathermap.org/img/w/${momentData.weather[0].icon}.png`;
-        const desc = momentData.weather[0].description;
+    currentTempEl.innerHTML = `${data.main.temp}&deg;C`;
 
-        // Crear elementos para mostrar la información
-        const tempElement = document.createElement('p');
-        tempElement.innerHTML = `${temp}&deg;F`;
+    weatherIconEl.setAttribute('src', iconsrc);
+    weatherIconEl.setAttribute('alt', desc);
+    weatherIconEl.setAttribute('loading', 'lazy');
+    weatherDescEl.textContent = `${desc}`;
+}
 
-        const iconElement = document.createElement('img');
-        iconElement.setAttribute('src', iconsrc);
-        iconElement.setAttribute('alt', 'weatherIcon');
+async function getForecastWeatherData() {
+    try {
+        const response = await fetch(baseUrl + forecastWeatherEndpoint);
 
-        const descElement = document.createElement('p');
-        descElement.textContent = desc;
+        if (!response.ok) {
+            throw new Error(await response.text());
+        }
 
-        // Agregar elementos al DOM
-        currentTemp.appendChild(tempElement);
-        currentTemp.appendChild(iconElement);
-        captionDesc.appendChild(descElement);
+        const data = await response.json();
+
+        displayForecastWeather(filterForecastData(data.list));
+    } catch (error) {
+        console.log(error);
     }
 }
 
-apiFetch();
+const displayForecastWeather = (data) => {
+    let forecastHTML = "";
 
+    data.forEach(forecastRow => {
+        forecastHTML += `
+    <div class="weather-forecast-card">
+    <p class="text-center">${new Intl.DateTimeFormat('en-US', { year: "numeric", month: "short", day: "numeric" }).format(new Date(forecastRow.dt_txt))}</p>
+    <p class="text-center">${forecastRow.main.temp}&deg;C</p>
+    </div>
+    `
+    });
+
+    forecastEl.innerHTML = forecastHTML;
+}
+
+const filterForecastData = (weatherArr) => {
+    let currentDate = new Date();
+    let currentDay = currentDate.getDate();
+
+    return weatherArr.filter(weatherRow => {
+        let weatherDate = new Date(weatherRow.dt_txt);
+        let weatherDay = weatherDate.getDate();
+        let weatherHour = weatherDate.getHours();
+
+        return weatherDay > currentDay && weatherHour === 12;
+    }).slice(0, 3);
+}
+
+getCurrentWeatherData();
+getForecastWeatherData();
+
+// Este código es creación de mi compañero Aaron

@@ -89,18 +89,26 @@
             </p>
         </div>
 
-        <div class="weather">
-            <h2>Weather</h2>
-            <figure>
-                <span id="current-temp"></span>
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
-            </figure>
-        </div>
+
+        <section id="weather-card" class="card p-20">
+            <div class="weather">
+                <h2>Weather Info</h2>
+                <h3 class="text-center">Current weather conditions</h3>
+                <p class="weather"><img id="current-weather-icon" src="#" alt="#"><span id="current-temp"></span> -
+                    <span id="current-weather-desc"></span>
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-center">Temperature Forecast</h3>
+                <div class="weather-forecast-container"></div>
+            </div>
+        </section>
 
         <h2 class="memberS">Member Spotlights</h2>
 
-        <div class="transport">
+        <section id="spotlights" class="spotlights px-20"></section>
+        <!-- <div class="transport">
             <h2>Thankful Transport</h2>
             <p>
                 "We get it there for you!"
@@ -133,7 +141,7 @@
                 +999-9999-9999<br>
                 Website
             </p>
-        </div>
+        </div> -->
     </main>
 
     <footer>
@@ -171,8 +179,8 @@
     <script src="scripts/hamburguerBotton2.js"></script>
     <script src="scripts/banner.js"></script>
     <script src="../scripts/getDates.js"></script>
-    <!-- ESTE SCRIPT ESTA MAL -->
-    <!-- <script src="scripts/weather.js"></script> -->
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 
 </html>
