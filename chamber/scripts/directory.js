@@ -1,5 +1,5 @@
 const baseURL = 'https://mocahe.github.io/wdd230/chamber/index.html';
-const linksURL = 'https://github.com/MOCAHE/wdd230/chamber/data/members.json';
+const linksURL = 'https://mocahe.github.io/wdd230/chamber/data/members.json';
 const ulList = document.querySelector('.grid');
 
 async function getLinks(){
